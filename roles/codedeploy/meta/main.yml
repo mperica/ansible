@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author:
+    - Martin Perica (martinperica@gmail.com)
+  description: "AWS codedeploy-agent"
+  license: MIT
+  version: 1.0.0
+  platforms:
+    - name: AmazonLinux
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - system

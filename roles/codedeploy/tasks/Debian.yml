@@ -1,0 +1,12 @@
+---
+- name: "Install required packages"
+  package:
+    state: latest
+    name: "{{ item }}"
+    update_cache: yes
+  with_items: "{{ packages }}"
+
+- name: "Checking if it is already installed"
+  command: dpkg-query -W 'codedeploy-agent'
+  ignore_errors: True
+  register: codedeploy_check

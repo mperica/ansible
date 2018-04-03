@@ -1,0 +1,4 @@
+packages:
+  - python27-pip
+  - ruby
+  - git
